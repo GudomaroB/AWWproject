@@ -19,10 +19,6 @@ input[type="tel"] {
   width: 100%;
 }
 
-button:hover {
-  opacity: 0.8;
-}
-
 /* Дополнительные стили для кнопки Отмена */
 .cancelbtnss {
   width: auto;
