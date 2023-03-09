@@ -35,6 +35,9 @@
   .page__flex {
     justify-content: center;
   }
+  .animationbtn {
+    display: none;
+  }
 }
 @media (max-width: 992px) {
   .humburger {
