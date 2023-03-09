@@ -32,11 +32,17 @@
   background: #44d92c;
   border-radius: 100%;
   padding: 0.5rem;
+  height: 4rem;
+  width: 4rem;
+  text-align: center;
 }
 
 .active:after {
   content: "\2716";
   color: #fff;
+  height: 4rem;
+  width: 4rem;
+  text-align: center;
 }
 .sec4__h1 {
   text-align: center;
