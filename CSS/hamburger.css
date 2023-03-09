@@ -1,0 +1,32 @@
+.humburger {
+  cursor: pointer;
+  position: relative;
+  width: 4.5rem;
+  height: 4.5rem;
+  display: none;
+  z-index: 10;
+}
+.humburger__span {
+  position: absolute;
+  top: 40%;
+  left: 15%;
+  width: 3.5rem;
+  height: 0.3rem;
+  background: #fff;
+  transition: all 0.5s;
+}
+.hum__span1 {
+  transform: translateY(-1rem);
+}
+.hum__span3 {
+  transform: translateY(1rem);
+}
+.header.test .hum__span1 {
+  transform: translateY(0) rotate(45deg);
+}
+.header.test .hum__span2 {
+  opacity: 0;
+}
+.header.test .hum__span3 {
+  transform: translateY(0) rotate(-45deg);
+}

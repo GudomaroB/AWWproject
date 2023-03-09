@@ -1,0 +1,125 @@
+.sec {
+  border-radius: 1.5rem;
+  min-height: 67rem;
+  position: relative;
+}
+.sec__social__link {
+  margin-bottom: 1rem;
+}
+.sec__social__link {
+  border: 0.2rem solid #fff;
+  border-radius: 50%;
+  padding: 1rem;
+  font-size: 2rem;
+  color: #fff;
+  transition: 0.5s;
+}
+.sec__social__link:hover {
+  color: blueviolet;
+  transform: scale(1.2);
+}
+.sec__social__bs {
+  padding: 2rem;
+  font-size: 4rem;
+}
+.sec__socila-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sec__flex {
+  position: absolute;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 11.5rem;
+}
+.sec__card {
+  min-height: 48rem;
+  border-radius: 4rem;
+  padding: 5.1rem 22rem 0 9.5rem;
+  background: linear-gradient(
+    98.49deg,
+    rgba(255, 255, 255, 0.4) -2.44%,
+    rgba(217, 217, 217, 0.411) 103.63%
+  );
+  backdrop-filter: blur(10px);
+}
+.sec__h2 {
+  margin-bottom: 2rem;
+  font-size: 4.8rem;
+  text-transform: uppercase;
+  max-width: 80rem;
+}
+.sec__h1 {
+  font-weight: 700;
+  font-size: 6.4rem;
+  line-height: 7.8rem;
+  color: #d8f04f;
+  margin-bottom: 6rem;
+  max-width: 80rem;
+}
+.sec__links {
+  display: inline-block;
+  padding: 2rem 3rem;
+  font-weight: 700;
+  font-size: 3.2rem;
+  letter-spacing: 0.07em;
+  color: #000000;
+  background: #fff;
+  border-radius: 5rem;
+}
+.sec__link {
+  display: inline-block;
+  padding: 2.3rem 7.5rem;
+  font-weight: 700;
+  font-size: 3.6rem;
+  letter-spacing: 0.07em;
+  color: #ffffff;
+  background: linear-gradient(90deg, #ab4dc8 -3.3%, #4f4ced 82.8%);
+  border-radius: 4rem;
+}
+.sec__imahes {
+  max-width: 175rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+  z-index: -2;
+}
+.block__kaspi {
+  text-align: center;
+}
+.kaspi__text {
+  font-weight: 700;
+  font-size: 3.6rem;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 3rem;
+}
+.kaspi__flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 51rem;
+  border: 0.2rem solid #ffffff;
+  border-radius: 6rem;
+  padding: 0 7rem 1.6rem 4rem;
+  margin: 0 auto;
+}
+.left__kaspi {
+  font-weight: 700;
+  font-size: 4.8rem;
+  letter-spacing: 0.07em;
+  color: #ffffff;
+}
+.right__kaspi {
+}
+.kaspi__img {
+}
+.rkaspi__text {
+  font-weight: 700;
+  font-size: 2.6rem;
+  letter-spacing: 0.07em;
+}

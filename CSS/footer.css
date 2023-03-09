@@ -1,0 +1,34 @@
+.footer {
+  padding: 10rem 0 14rem 0;
+}
+.footer__h2 {
+  text-align: center;
+  font-weight: 500;
+  font-size: 3.6rem;
+  margin-bottom: 5.7rem;
+}
+.footer__contacts {
+  text-align: center;
+  margin-bottom: 7.6rem;
+}
+.footer__phone {
+  display: inline-block;
+  font-weight: 600;
+  color: #bd30e8;
+  font-size: 3.6rem;
+}
+.footer__flex-box {
+  margin: 0 auto;
+  max-width: 50rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.footer__img-mr {
+  margin-left: 10rem;
+}
+.sec__social__link-what,
+.sec__social__link-tele {
+  font-size: 9rem;
+  border: none;
+}

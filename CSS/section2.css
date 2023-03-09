@@ -1,0 +1,47 @@
+.sec2 {
+  padding: 10rem 0;
+}
+.sec2__h1 {
+  text-align: center;
+  font-weight: 500;
+  font-size: 3.6rem;
+  line-height: 44px;
+  margin-bottom: 7rem;
+}
+.sec2__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  grid-gap: 4rem;
+}
+.sec2__wrapper {
+  position: relative;
+  min-height: 43rem;
+  padding: 4rem 1.8rem;
+  text-align: center;
+  border-radius: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.5s;
+  background: linear-gradient(
+    98.49deg,
+    rgba(255, 255, 255, 0.4) -2.44%,
+    rgba(217, 217, 217, 0.4) 103.63%
+  );
+}
+.sec2__wrapper:hover {
+  transform: scale(1.1);
+}
+.sec2__h2 {
+  display: inline-block;
+  color: #fff;
+  font-weight: 500;
+  font-size: 3.2rem;
+  margin-bottom: 2.9rem;
+}
+.sec2__arrow {
+  position: absolute;
+  bottom: 4.4rem;
+  right: 4.6rem;
+}

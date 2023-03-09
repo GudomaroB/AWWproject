@@ -1,0 +1,48 @@
+.accordion {
+  color: #fff;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  background: #000;
+  padding: 6rem 2rem;
+  font-size: 4rem;
+  border-bottom: 0.2rem solid #4f4ced;
+}
+.panel {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+.panel > p {
+  padding: 2rem 0;
+  font-size: 2.4rem;
+  line-height: 4rem;
+}
+.accordion:after {
+  color: #fff;
+  content: "\271A";
+  font-size: 2rem;
+  float: right;
+  margin-left: 5px;
+  background: #44d92c;
+  border-radius: 100%;
+  padding: 0.5rem;
+}
+
+.active:after {
+  content: "\2716";
+  color: #fff;
+}
+.sec4__h1 {
+  text-align: center;
+  margin-bottom: 7rem;
+  font-weight: 700;
+  font-size: 3.6rem;
+  letter-spacing: 0.07em;
+  color: #ffffff;
+}
