@@ -94,5 +94,6 @@
 }
 .pr__lupdate {
   border-radius: 3rem;
-  background: linear-gradient(360deg, #ab4dc8 -3.3%, #4f4ced 82.8%);
+  background: #000;
+  color: #fff;
 }
