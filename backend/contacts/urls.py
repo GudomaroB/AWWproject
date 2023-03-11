@@ -1,6 +1,6 @@
 from django.urls import path, include
 from .views import (
-    IndexView, OnlineShopView, EnterprisePortalView, BCView, LPView, PortalView, PromoView, PricesView, ContactCreateView
+    IndexView, OnlineShopView, EnterprisePortalView, BCView, LPView, PortalView, PromoView, PricesView, create_contact
 )
 
 app_name = 'contacts'
@@ -14,5 +14,5 @@ urlpatterns = [
     path('prices/', PricesView.as_view(), name='prices'),
     path('promo/', PromoView.as_view(), name='promo'),
     path('business_card/', BCView.as_view(), name='vizitka'),
-    path('contact/', ContactCreateView , name='contact_form'),
+    path('contact/', create_contact , name='contact_form'),
 ]
