@@ -1,0 +1,29 @@
+{% load static %}
+{% load widget_tweaks %}
+
+<!DOCTYPE html> 
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="{% static 'icon/ArrowPage.png' %}" type="image">
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'icon/fav/apple-touch-icon.png' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'icon/fav/favicon-32x32.png' %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'icon/fav/favicon-16x16.png' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    <title> {% block title %} Имя вкладки {% endblock title %} </title>
+  </head>        
+  <body>
+    {% include 'includes/header.html' %}
+    <div class="container py-5">
+      <main>
+      {% include 'includes/service.html'%}
+      {% include 'includes/contact_info.html' %}
+      {% block content %} 
+      Содержимое страниц 
+      {% endblock %}
+    </main>
+  </body>
+  <script src="{% static 'js/script.js' %}"></script>
+</html> 
