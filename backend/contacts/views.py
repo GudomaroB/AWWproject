@@ -40,16 +40,10 @@ class IndexView(TemplateView):
     
 
 def contact_form(request):
-    contact_template = 'forms/contact_info.html'
+    contact_template = 'includes/contact_info.html'
     form = ContactForm(request.POST or None)
     if request.method == 'POST':
         if form.is_valid():
             form.save()
             return redirect('contacts:index')
     return render(request, contact_template, {'form': form})
-
-
-    
-# def index(request):
-#     template = 'index.html'
-#     return render(request, template) 
