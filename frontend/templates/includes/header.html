@@ -1,0 +1,30 @@
+{% load static %}
+    {% comment %} <a
+      class="top_header-id sec__social__link sec__social__bs animationbtn"
+      href="#hdrg"
+    >
+      <i class="icon-arrow-up2"></i>
+    </a> {% endcomment %}
+<div class="container">
+  <header class="header">
+    {% if request.resolver_match.view_name == 'contacts:index' %}
+    <a href="#" class="header__logo-link"
+      ><img src="{% static 'icon/logo.png' %}" alt="logo_header" class="header__logo"
+    /></a>
+    {% else %}
+    <a href="{% url 'contacts:index' %}" class="header__logo-page"
+      ><img
+        src="{% static 'icon/ArrowPage.png' %}"
+        alt="logo_header"
+        class="header__logo-page"
+    /></a>
+    {% endif %}
+    <nav class="nav">
+      <a href="#" class="nav__link">ПОРТФОЛИО</a>
+      <a href="#" class="nav__link" id="modals">УСЛУГИ</a>
+      <a href="{% url 'contacts:prices' %}" class="nav__link">ЦЕНА</a>
+      <a href="#" class="nav__link">КОНТАКТЫ</a>
+    </nav>
+    {% include 'includes/service.html'%}
+  </header>
+
