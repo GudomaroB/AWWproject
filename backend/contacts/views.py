@@ -1,49 +1,48 @@
-from django.views.generic import CreateView
-from .models import Contact
+from django.shortcuts import redirect, render
 from django.urls import reverse_lazy
-from django.shortcuts import redirect
+from django.views.generic import CreateView, TemplateView
+
 from .forms import ContactForm
-from django.shortcuts import render
-from django.views.generic import TemplateView
+from .models import Contact
 
 
 class OnlineShopView(TemplateView):
-    template_name = 'internet.html'
-    
+    template_name = "internet.html"
+
 
 class EnterprisePortalView(TemplateView):
-    template_name = 'korpor.html'
-    
+    template_name = "korpor.html"
+
 
 class LPView(TemplateView):
-    template_name = 'landing-page.html'
-    
-    
+    template_name = "landing-page.html"
+
+
 class PortalView(TemplateView):
-    template_name = 'portal.html'
+    template_name = "portal.html"
 
 
 class PricesView(TemplateView):
-    template_name = 'prices.html'
-    
-    
+    template_name = "prices.html"
+
+
 class PromoView(TemplateView):
-    template_name = 'promo.html'
-    
-    
+    template_name = "promo.html"
+
+
 class BCView(TemplateView):
-    template_name = 'vizitka.html'
-    
+    template_name = "vizitka.html"
+
 
 class IndexView(TemplateView):
-    template_name = 'index.html'
-    
+    template_name = "index.html"
+
 
 def create_contact(request):
-    contact_template = 'includes/contact_info.html'
+    contact_template = "includes/contact_info.html"
     form = ContactForm(request.POST or None)
-    if request.method == 'POST':
+    if request.method == "POST":
         if form.is_valid():
             form.save()
-            return redirect('contacts:index')
-    return render(request, contact_template, {'form': form})
+            return redirect("contacts:index")
+    return render(request, contact_template, {"form": form})
