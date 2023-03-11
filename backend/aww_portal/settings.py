@@ -4,9 +4,9 @@ import os
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 
-SECRET_KEY = 'django-insecure-5h$jc8pmuq0*gxg(_sb_qtx&bom+%44j2tbnto2^8sddh0^9^#'
+SECRET_KEY = os.environ.get('SECRET_KEY')
 
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
@@ -20,7 +20,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'contacts',
     'phonenumber_field',
-    'widget_tweaks',
 ]
 
 MIDDLEWARE = [

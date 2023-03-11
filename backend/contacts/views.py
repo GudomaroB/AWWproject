@@ -38,13 +38,8 @@ class BCView(TemplateView):
 class IndexView(TemplateView):
     template_name = 'index.html'
     
-    
-# class ContactCreateView(CreateView):
-#     form_class = ContactForm
-#     template_name = 'includes/contact_info.html'
-#     success_url = 'contacts:index'
 
-def ContactCreateView(request):
+def create_contact(request):
     contact_template = 'includes/contact_info.html'
     form = ContactForm(request.POST or None)
     if request.method == 'POST':
