@@ -1,28 +1,27 @@
+{% load widget_tweaks %}
+
 <div id="id010" class="modalgg">
-  <form class="modalg-contentjj animatez">
-    <div class="containersr">
-      <label for="uname"><b>Ваше Имя</b></label>
-      <input type="text" placeholder="Иван" name="uname" required />
-
-      <label for="pswd"><b>Номер</b></label>
-      <input
-        type="tel"
-        placeholder="+7 (706)-842-88-99"
-        name="pswd"
-        required
-      />
-
+  <form method="post" class="modalg-contentjj animatez" action="{% url 'contacts:contact_form'%}">
+    {% csrf_token %}
+      {% for field in form.visible_fields %}
+      <div class="containersr">
+        <label="{{ field.id_for_label }}">{{ field.label }}</label>
+        {{ field }}
+        {% for error in fields.errors %}
+        <span class="help-block">{{error}}</span>
+        {% endfor %}
+      </div>
+      {% endfor %}
       <button class="ftbtv" type="submit">Отправить</button>
-    </div>
+
+      {% comment %} <label for="{{ form.name.id_for_label }}">{{ form.name.id_for_label }}</label>
+      {% render_field form.name class+="form__in" placeholder="Иван" required="true" %}
+
+      <label for="{{ form.phone_number.id_for_label }}"><b>Номер</b></label>
+      {% render_field form.phone_number class+="form__in" placeholder="+7 (706)-842-88-99" required="true" %} {% endcomment %}
 
     <div class="containersr">
-      <button
-        type="button"
-        class="cancelbtnss"
-        onclick="document.getElementById('id010').style.display='none'"
-      >
-        Отменить
-      </button>
+      <button type="button" class="cancelbtnss" onclick="document.getElementById('id010').style.display='none'">Отменить</button>
     </div>
   </form>
 </div>
