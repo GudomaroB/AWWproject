@@ -9,12 +9,6 @@
   transition: border-color 0.2s ease-in-out;
 }
 
-.form_in:focus {
-  outline: none;
-  border-color: #4CAF50;
-}
-
-
 /* Установите стиль для всех кнопок */
 .ftbtv {
   background: linear-gradient(90deg, #ab4dc8 -3.3%, #4f4ced 82.8%);
